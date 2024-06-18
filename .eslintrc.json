@@ -8,11 +8,19 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": ["tsconfig.json"],
+    "project": [
+      "tsconfig.json"
+    ],
     "createDefaultProgram": true
   },
-  "plugins": ["unused-imports", "simple-import-sort"],
-  "extends": ["plugin:prettier/recommended"],
+  "plugins": [
+    "unused-imports",
+    "simple-import-sort"
+  ],
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
+  ],
   "settings": {
     "react": {
       "version": "detect"
