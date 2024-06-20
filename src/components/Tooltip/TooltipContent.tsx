@@ -1,17 +1,17 @@
 import { styled, css } from "styled-components";
 import { TooltipBoxProps } from "./type";
 
-const TooltipBox = ({ message, style, type }: TooltipBoxProps) => {
+const TooltipContent = ({ message, style, type }: TooltipBoxProps) => {
   console.log(style);
 
   return (
-    <TooltipBoxContainer type={type} style={style || { left: 0, top: 0 }}>
+    <TooltipContentContainer type={type} style={style || { left: 0, top: 0 }}>
       {message}
-    </TooltipBoxContainer>
+    </TooltipContentContainer>
   );
 };
 
-const TooltipBoxContainer = styled.div<{
+const TooltipContentContainer = styled.div<{
   style: { left: number; top: number } | undefined;
   type: string | undefined;
 }>`
@@ -64,4 +64,4 @@ const TooltipBoxContainer = styled.div<{
     `}
 `;
 
-export default TooltipBox;
+export default TooltipContent;

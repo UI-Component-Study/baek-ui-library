@@ -3,7 +3,7 @@ import { PositionType, getPosition } from "./tooltip";
 import styled from "styled-components";
 import { TooltipContainerProps } from "./type";
 import TooltipPortal from "./TooltipPortal";
-import TooltipBox from "./TooltipBox";
+import TooltipBox from "./TooltipContent";
 
 const TooltipPortalContainer = ({
   children,
