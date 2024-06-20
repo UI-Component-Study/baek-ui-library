@@ -1,8 +1,20 @@
+import styled from "styled-components";
+import TooltipPortalContainer from "./components/Tooltip/TooltipPortalContainer";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <AppContainer>
+      <TooltipPortalContainer message="hi" className="home">
+        <AppContent>Hello Worlddddddddddddddddd</AppContent>
+      </TooltipPortalContainer>
+    </AppContainer>
   );
 };
 export default App;
+
+const AppContainer = styled.div`
+  text-align: center;
+  margin-top: 500px;
+`;
+
+const AppContent = styled.span``;

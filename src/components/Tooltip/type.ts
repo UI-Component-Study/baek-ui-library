@@ -1,5 +1,15 @@
-export interface TooltipProps {
-  text: string;
+export interface TooltipContainerProps {
+  message: string;
+  children: React.ReactNode | React.ReactNode[];
+  className?: string;
+}
+
+export interface TooltipPortalProps {
   children: React.ReactNode;
-  position?: "top" | "bottom" | "left" | "right";
+}
+
+export interface TooltipBoxProps {
+  message: string;
+  style: { left: number; top: number };
+  type: string;
 }
