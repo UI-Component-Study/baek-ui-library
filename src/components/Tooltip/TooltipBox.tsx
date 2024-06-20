@@ -5,15 +5,15 @@ const TooltipBox = ({ message, style, type }: TooltipBoxProps) => {
   console.log(style);
 
   return (
-    <TooltipBoxContainer type={type} style={style}>
+    <TooltipBoxContainer type={type} style={style || { left: 0, top: 0 }}>
       {message}
     </TooltipBoxContainer>
   );
 };
 
 const TooltipBoxContainer = styled.div<{
-  style: { left: number; top: number };
-  type: string;
+  style: { left: number; top: number } | undefined;
+  type: string | undefined;
 }>`
   position: absolute;
   width: 8rem;

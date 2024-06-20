@@ -5,7 +5,7 @@ const App = () => {
   return (
     <AppContainer>
       <TooltipPortalContainer message="hi" className="home">
-        <AppContent>Hello Worlddddddddddddddddd</AppContent>
+        <AppContent>Hello</AppContent>
       </TooltipPortalContainer>
     </AppContainer>
   );
@@ -14,7 +14,7 @@ export default App;
 
 const AppContainer = styled.div`
   text-align: center;
-  margin-top: 500px;
+  margin-top: 300px;
 `;
 
 const AppContent = styled.span``;

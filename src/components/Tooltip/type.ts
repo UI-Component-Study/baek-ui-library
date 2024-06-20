@@ -10,6 +10,6 @@ export interface TooltipPortalProps {
 
 export interface TooltipBoxProps {
   message: string;
-  style: { left: number; top: number };
-  type: string;
+  style?: { left: number; top: number };
+  type?: string;
 }
